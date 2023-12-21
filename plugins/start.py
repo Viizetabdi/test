@@ -18,7 +18,7 @@ log_channel = int(os.environ.get("LOG_CHANNEL",""))
 token = os.environ.get('TOKEN','')
 botid = token.split(':')[0]
 FLOOD = 500
-LAZY_PIC = os.environ.get("LAZY_PIC", "")
+LAZY_PIC = os.environ.get("LAZY_PIC", "https://graph.org/file/66930191ac0b30f536f69.jpg")
 
 
 # Part of Day --------------------

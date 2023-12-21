@@ -17,6 +17,21 @@ STRING = os.environ.get("STRING","")
 log_channel = int(os.environ.get("LOG_CHANNEL",""))
 token = os.environ.get('TOKEN','')
 botid = token.split(':')[0]
+FLOOD = 500
+LAZY_PIC = os.environ.get("LAZY_PIC", "")
+
+
+# Part of Day --------------------
+currentTime = datetime.datetime.now()
+
+if currentTime.hour < 12:
+    wish = "❤️ Good morning sweetheart ❤️"
+elif 12 <= currentTime.hour < 12:
+    wish = '🤍 Good afternoon my Love 🤍'
+else:
+    wish = '🦋 Good evening baby 🦋'
+
+# -------------------------------
 
 
 @Client.on_message(filters.private & filters.command(["start"]))
